@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 12 e 13</title>
+</head>
+<body>
+    <script>
+        let num = Math.floor( Math.random() * 100) + 1;
+        let utilizador;
+        let jogadas=1;
+        const NUM_ATTEMPTS = 6;
+       do {
+         utilizador= +prompt("Insira um numero:");
+            if (utilizador > num) {
+                alert(`PARA BAIXO Jogadas:${jogadas}` )
+            }else if(utilizador < num){
+                alert(`PARA CIMA  Jogadas:${jogadas}`)
+            }
+            else {
+               alert('NUMERO CERTO')
+            }
+            jogadas++;
+
+        }while (num != utilizador && jogadas < NUM_ATTEMPTS);
+    </script>
+</body>
+</html>
