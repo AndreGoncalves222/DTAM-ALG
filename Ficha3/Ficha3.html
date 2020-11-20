@@ -130,7 +130,7 @@
 
        //Exercicio2ci
      
-         const numbers = [4, 5, 12, -3, 34]
+         const numbers = [4, 5, 12, -3, 34];
       /* let soma= 0;
        for(let i = 0; i < numbers.length; i++){
            soma = soma + numbers[i]
@@ -140,7 +140,7 @@
     console.log(media);*/
     
     //Exercicio2cii
-    let maximo = numbers[0];
+    /*let maximo = numbers[0];
     let minimo = numbers[0];
 
     for (let i = 1; i < numbers.length; i++) {
@@ -148,12 +148,62 @@
         minimo = numbers[i];
         }
     }
-    console.log[minimo];
+    
+    for (let j = 1; j < numbers.length; j++) {
+        if(numbers[j] > maximo){
+        maximo = numbers[j];
+        }
+    }
+    
+    console.log(`O minimo é ${minimo} e o maximo é ${maximo}! `)*/
 
+    //Exercicio2ciii
+    /*let count=0;
+    for (let i = 0; i < numbers.length; i++) {
+        if(numbers[i]<0){
+            count++;
 
+        }
+        
+    }
 
+    console.log(`Tem ${count} numeros negativos.`)*/
 
+    /*let limInf = prompt('Insira o limite inferior')
+    let limSup = prompt('Insira o limite superior')
+    let temp = 0;
+    let count=0;
 
+    if (limInf>limSup) {
+        temp=limSup;
+        LimSup = limInf;
+        limInf = temp;
+
+    }
+
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i]> limInf && numbers[i]< limSup) {
+            count++
+        }
+        
+    }
+    console.log(count);*/
+
+    //Exercicio D
+
+    let lugares = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    let utilizador;
+   do {
+       pos = +prompt('Insira um numero entre 1 e 10 para estacionar') 
+       if (lugares[pos - 1 ]==0){
+       lugares[pos-1]=1;
+       alert('Lugar livre pode estacionar!')}
+       else{
+           alert('Lugar ocupado! Tente outro lugar!')
+       }
+
+   } while (lugares.indexOf(0)!= -1);
+   console.log('Parque cheio');
 
     </script>
 </body>
