@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type= "text" id = "txtDumbo">
+    <p id="pDumbo"></p>
+   <button>Clica-me</button>
+    <script>
+ //alenea A
+       const botao= document.querySelector("button")
+/*
+        button.addEventListener("click", function () {
+            alert("Ola mundo!")
+        })*/
+
+        //alenea B
+        const p = document.querySelector("p")
+       
+        const textBox = document.querySelector("input")
+
+        textBox.addEventListener('input', function(){
+           p.innerHTML = textBox.value
+            
+        })
+        
+
+         //alenea C
+        botao.addEventListener("click", function(){
+            alert(textBox.value.length)
+        }
+        )
+ //alenea D
+ botao.addEventListener("mouseup", function(){
+console.log("Obrigado pelo click no botao")
+}
+        )
+
+        window.addEventListener('load', function(){
+            const x = document.querySelector('#xxx')
+        }
+        
+        )
+       
+
+
+
+
+    </script>
+    <p id = "xxx"></p>
+</body>
+</html>

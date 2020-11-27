@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <table>
+        <tr>
+        <th>escola</th>
+        <th>local</th>
+        </tr>
+        <tr>
+        <td>ESMAD</td>
+        <td>Vila do Conde
+        </tr>
+    </table>
+<script>
+    //alenea B
+  /* const table = `
+    <table>
+        <tr>
+            <th>escola</th>
+            <th>local</th>
+        </tr>
+        <tr>
+            <td>ESMAD</td>
+            <td>Vila do C
+        </tr>
+        
+    </table> 
+   `
+   
+  const body = document.querySelector('body')
+  body.innerHTML = table */
+
+//alenea C
+
+  const table = document.querySelector('table')
+    table.innerHTML += `<tr><td>ISEP</td><td>Porto</td></tr>` 
+
+//alenea D
+
+    const local = document.querySelector('td:last-of-type')
+    local.innerHTML += `/Povoa do Varzim`
+
+    //alenea E
+    const tbody = document.querySelector('tbody')
+    const tr = document.querySelector('tr:first-of-type')
+    tbody.removeChild(tr)
+
+
+
+
+
+
+
+</script>    
+</body>
+</html>
