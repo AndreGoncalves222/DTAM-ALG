@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1, num2, temp, sum;
+//Primeiro numero
+        do {
+            num1 = +prompt('Digite o primeiro numero')
+        } while (num1 < 1 || num1 > 99);
+//Segundo numero
+        do {
+            num1 = +prompt('Digite o segundo numero')
+        } while (num2 < 1 || num2 > 99);
+        
+        //Trocar numeros caso sejam menores
+
+        if (num2<num1) {
+            temp = num1
+            num1 = num2
+            num2= temp
+        }
+
+        //Somar todos os numero dentro do intrevalo
+
+        sum = 0
+
+        for (let i = num1; i < num2; i++) {
+
+            if (i % 2 == 0 && i % 5 ==0) {
+                sum +=1
+            }
+            
+            
+        }
+        console.log(`O resultador final é ${sum}`);
+                                  
+
+    </script>
+</body>
+</html>
