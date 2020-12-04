@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          let temperaturas = [4];
+        for (let i = 0; i < 5; i++) {
+            temperaturas = prompt('Insira a temperatura')
+            
+        }
+        
+           
+
+        function removeMaxMin(temperaturas){
+            let temperatura = [temperaturas]
+           
+          let max 
+            let min
+            for (let i = 0; i < 5; i++) {
+                if (max < temperatura [i]){
+                    max= temperatura[i]
+                    
+                }else if (min > temperatura[i]) {
+                    min = temperatura[i];
+                    
+                }  
+                removemax=temperatura.indexOf( max)
+                temperatura.slice(removemax)
+                removemin=temperatura.indexOf( min)
+                temperatura.slice(removemin)
+            }
+            for (let j = 0; j < 3; j++)
+            {console.table(temperatura[j])
+            }
+            
+        }   
+
+        removeMaxMin(); 
+    </script>
+</body>
+</html>

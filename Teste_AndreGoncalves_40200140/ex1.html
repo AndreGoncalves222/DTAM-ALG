@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = prompt('Quantas notas tem o aluno?')
+        let soma =0;
+        let nota=0;
+        for (let i = 0; i < n; i++) {
+                nota = +prompt('Insira a nota:')
+                if (nota >= 0 || nota <= 20) {
+                    
+                    soma = soma + nota;
+                }
+            }
+
+
+            
+        
+        let m = soma / n;
+        console.log(`A media de notas do aluno é ${m}`)
+
+    </script>
+</body>
+</html>
