@@ -36,9 +36,9 @@ b_reiniciar.addEventListener('click', (event) => {
 
     vencedor = '_'; 
 
-    randomStarter(); 
+    //randomStarter(); 
 });
-var randomStarter = function() {
+/* var randomStarter = function() {
     if(Math.floor(Math.random() * 2)==0) {
         jogador = "O"; 
         label_jogador.innerText="O"; 
@@ -48,7 +48,7 @@ var randomStarter = function() {
         label_jogador.innerText="X"; 
         label_jogador.style.color='#00F'; 
     }
-}
+} */
 var trocarJogador = function() {
     if(jogador=='X') {
         jogador='O';
